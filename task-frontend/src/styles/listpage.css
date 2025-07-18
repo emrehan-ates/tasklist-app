@@ -1,0 +1,56 @@
+.modal-overlay {
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-box {
+    display: block;
+    background: white;
+    width: 70%;
+    max-height: 80vh;      /* Limit height to 80% of viewport */
+    overflow-y: auto;      /* Enable vertical scrolling if needed */
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 30px 40px;
+    margin: 12px 12px;
+    margin-top: 25px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+    background: #fafbfc;
+    resize: vertical; 
+    color: black;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    background: #fff;
+}
+
+label {
+    color: black;
+    display: flex;
+    margin-top: 15px;
+}
+
+p{
+  color: red;
+  font-size: medium;
+}

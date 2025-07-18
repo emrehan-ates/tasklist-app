@@ -1,0 +1,127 @@
+.tasks-container {
+    padding: 40px;
+    background-color: inherit;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 15%; /* or padding-top: 60px; */
+}
+
+.task-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 tasks per row */
+    gap: 30px;
+    width: 100%;
+    max-width: 900px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tasks-item {
+    position: relative;
+    z-index: 4;
+    background-color: #fff;
+    color: #222;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    padding: 48px 32px 24px 32px; /* Increase top padding (48px or more) */
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s;
+}
+
+.tasks-item:hover {
+    transform: translateY(-6px);
+}
+
+.delete-btn,
+.update-btn {
+    z-index: 5;
+    position: absolute;
+    top: 10px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.delete-btn {
+    left: 10px;
+    background-color: #ff4d4f;
+    color: white;
+}
+
+.update-btn {
+    right: 10px;
+    background-color: #1890ff;
+    color: white;
+}
+
+.tasks-item:hover .delete-btn,
+.tasks-item:hover .update-btn {
+    opacity: 1;
+}
+
+.tasks-item h4 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.tasks-item p {
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.tasks-item span {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 4px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.done-btn {
+    margin-top: auto;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #52c41a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.done-btn:disabled {
+    background-color: #b7eb8f;
+    color: #555;
+    cursor: not-allowed;
+}
+
+.update-btn:disabled {
+    background-color: #67a9e8;
+    color: #555;
+    cursor: not-allowed;
+}
+
+span:hover{
+    text-decoration: underline;
+}

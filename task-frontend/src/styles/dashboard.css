@@ -1,0 +1,38 @@
+.top-menu{
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: inherit;
+    width: 100%;
+    
+}
+
+.list-cards-container{
+    margin-top: 15%;
+}
+
+.profile-button{
+    color: #000;
+    padding-right: 15px;
+    font-size: x-large;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.profile-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+span{
+    color: black;
+    font-size: larger;
+    display: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+    padding-right: 90%;
+}

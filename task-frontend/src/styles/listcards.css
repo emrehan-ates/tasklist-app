@@ -1,0 +1,65 @@
+.list-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; /* Bigger gap between cards */
+    padding: 30px;
+    background-color: inherit;
+  }
+  
+  .list-card {
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 40px; /* More padding inside cards */
+    min-height: 200px; /* Makes cards visibly larger */
+    min-width: 150px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .list-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .list-name {
+    font-size: 1.5rem; /* Bigger heading */
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 0;
+  }
+  
+  .list-desc {
+    font-size: 1.125rem; /* Bigger paragraph */
+    color: #333;
+  }
+  
+  .delete-btn, .update-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+.update-btn {
+  right: 10px;
+  background-color: #1890ff;
+  color: white;
+  margin-left: 75%;
+}
+  .list-card:hover .delete-btn {
+    display: flex; /* Show on hover */
+  }
